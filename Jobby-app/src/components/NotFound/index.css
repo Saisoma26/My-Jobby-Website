@@ -1,0 +1,24 @@
+.notfound-bg {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notfound-image {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.5;
+}
+.notfound-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #cbd5e1;
+}

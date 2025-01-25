@@ -1,0 +1,42 @@
+.navbar {
+  width: cover;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #cbd5e1;
+}
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 90%;
+  align-items: center;
+}
+.nav-logo {
+  width: 120px;
+  height: 30px;
+  outline: none;
+}
+.options-container {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.list-item {
+  font-size: 12px;
+  color: #f8f8f8;
+  margin-right: 6px;
+  outline: none;
+  text-decoration: none;
+}
+.logout-btn {
+  width: 100px;
+  height: 32px;
+  background-color: #6366f1;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 4px;
+}

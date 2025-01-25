@@ -1,0 +1,90 @@
+.job-item {
+  width: 80%;
+  outline-style: none;
+}
+.cardbg-container {
+  background-color: #475569;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.name-logo-container {
+  display: flex;
+  align-items: center;
+}
+.applogo {
+  width: 60px;
+  height: cover;
+  margin-right: 8px;
+}
+.name-container {
+  margin-top: 0px;
+}
+.company-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0px;
+  line-height: 0.5;
+}
+.rating-container {
+  display: flex;
+  margin-top: 0px;
+}
+.rating {
+  font-size: 14px;
+  color: white;
+}
+.extra-options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-and-type-container {
+  display: flex;
+  align-items: center;
+}
+.location {
+  font-size: 12px;
+  color: white;
+}
+.type {
+  font-size: 12px;
+  color: white;
+}
+.salary {
+  font-size: 16px;
+  color: white;
+}
+.hrline {
+  color: #f8f8f8;
+  background-color: #f8f8f8;
+}
+.description-heading {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.description {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+.star-icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  color: #fbbf24;
+}
+.location-icon {
+  width: 10px;
+  height: 10px;
+  color: #f1f5f9;
+  margin-right: 5px;
+}
+.case-icon {
+  width: 10px;
+  height: 10px;
+  color: #f1f5f9;
+  margin-right: 5px;
+}

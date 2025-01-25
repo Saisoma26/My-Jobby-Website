@@ -1,0 +1,56 @@
+.back {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  width: 30%;
+  min-height: 40%;
+  align-self: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #272727;
+}
+.website-logo {
+  align-self: center;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.inputel-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 6px;
+}
+.inputel {
+  height: 36px;
+  border: 1px solid #f8f8f8;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.submit-btn {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f8f8f8;
+  background-color: #4f46e5;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.errmsg {
+  color: #ff0b37;
+  font-size: 12px;
+  font-weight: 500;
+}

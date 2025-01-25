@@ -1,0 +1,43 @@
+.card-bg-container {
+  background-color: #7e858e;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.name-logo-container {
+  display: flex;
+}
+.app-logo {
+  width: 40px;
+  height: 70px;
+  margin-right: 8px;
+}
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+}
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.rating-container {
+  display: flex;
+}
+.rating {
+  font-size: 14px;
+  color: white;
+}
+.description-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 12px;
+  font-weight: 500;
+  color: #f1f5f9;
+}
