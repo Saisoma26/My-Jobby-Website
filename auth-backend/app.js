@@ -14,7 +14,18 @@ const app = express();
 //   credentials: true, // Allow sending cookies with requests
 // }));
 
-app.use(cors());
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      // Allow all origins
+      callback(null, true);
+    },
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods,
+    credentials: true, // Enable sending credentials (cookies, etc.)
+  })
+);
+
+// app.use(cors());
 app.use(express.json());
 
 mongoose
