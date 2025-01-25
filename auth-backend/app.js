@@ -8,11 +8,13 @@ const path = require('path');
 dotenv.config();
 
 const app = express();
-app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001'], // Allow both frontend origins
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods
-  credentials: true, // Allow sending cookies with requests
-}));
+// app.use(cors({
+//   origin: ['http://localhost:3000', 'http://localhost:3001'], // Allow both frontend origins
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods
+//   credentials: true, // Allow sending cookies with requests
+// }));
+
+app.use(cors());
 app.use(express.json());
 
 mongoose
