@@ -53,14 +53,12 @@ class ProfileDetails extends Component {
 
   renderprofilecard = () => {
     const {profileDetails} = this.state
-    const {name, description} = profileDetails
+    const {name, description, profileImageUrl} = profileDetails
+    console.log('profileImageUrl:', profileImageUrl)
+    console.log('name:', name)
     return (
       <div className="profile-bg">
-        <img
-          src={profileDetails.profileImageUrl}
-          alt="profile"
-          className="profile-image"
-        />
+        <img src={profileImageUrl} alt="profile" className="profile-image" />
         <h1 className="profile-name">{name}</h1>
         <p className="profile-description">{description}</p>
       </div>

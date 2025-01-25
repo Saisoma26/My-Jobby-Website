@@ -148,6 +148,7 @@ class Jobs extends Component {
         Authorization: `Bearer ${jwtToken}`,
       },
       signal: profileController.signal,
+      credentials: true,
     }
 
     try {

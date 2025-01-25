@@ -69,7 +69,7 @@ router .get('/profile', async (req, res) => {
       return res.status(404).json({ message: 'User not found' });
     }
     console.log(user)
-    const profile_details = { name: user.username, description: user.description , profile_image_url: 'http://localhost:3000/images/profile-pic.png' }
+    const profile_details = { name: user.username, description: user.description , profile_image_url: 'https://my-jobby-website.onrender.com/images/profile-pic.png' }
     // Send user details as response
     console.log("profile details", profile_details)
     return res.status(200).json(profile_details);
