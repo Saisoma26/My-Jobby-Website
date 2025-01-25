@@ -62,7 +62,7 @@ class JobItemDetails extends Component {
     const {id} = params
 
     const jwtToken = Cookies.get('jwt_token')
-    const url = `http://localhost:3000/api/auth/jobs/${id}`
+    const url = `https://my-jobby-website.onrender.com/api/auth/jobs/${id}`
     const options = {
       method: 'GET',
       headers: {

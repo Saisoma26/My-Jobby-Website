@@ -35,7 +35,7 @@ class RegisterForm extends Component {
     }
 
     const userDetails = {username, password, description}
-    const url = 'http://localhost:3000/api/auth/register'
+    const url = 'https://my-jobby-website.onrender.com/api/auth/register'
     const options = {
       method: 'POST',
       body: JSON.stringify(userDetails),

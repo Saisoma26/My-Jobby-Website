@@ -23,7 +23,7 @@ class LoginForm extends Component {
     event.preventDefault()
     const {username, password} = this.state
     const userDetails = {username, password}
-    const url = 'http://localhost:3000/api/auth/login'
+    const url = 'https://my-jobby-website.onrender.com/api/auth/login'
     const options = {
       method: 'POST',
       headers: {

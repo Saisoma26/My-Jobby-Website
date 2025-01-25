@@ -22,7 +22,7 @@ class ProfileDetails extends Component {
 
     const jwtToken = Cookies.get('jwt_token')
     console.log('JWT Token front:', jwtToken)
-    const url = 'http://localhost:3000/api/auth/profile'
+    const url = 'https://my-jobby-website.onrender.com/api/auth/profile'
     const options = {
       method: 'GET',
       headers: {

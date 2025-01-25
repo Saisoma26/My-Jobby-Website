@@ -84,7 +84,7 @@ class Jobs extends Component {
     const {salaryoption, typeOfemplList, searchInput} = this.state
     const liststr = typeOfemplList.join(',')
     console.log(liststr)
-    const url = `http://localhost:3000/api/auth/jobs?employment_type=${liststr}&minimum_package=${salaryoption}$search=${searchInput}`
+    const url = `https://my-jobby-website.onrender.com/api/auth/jobs?employment_type=${liststr}&minimum_package=${salaryoption}$search=${searchInput}`
     const options = {
       method: 'GET',
       headers: {
@@ -114,7 +114,7 @@ class Jobs extends Component {
     this.setState({profilestatus: apiStatusList.loading})
 
     const jwtToken = Cookies.get('jwt_token')
-    const url = 'https://localhost:3000/api/auth/profile'
+    const url = 'https://my-jobby-website.onrender.com/api/auth/profile'
     const options = {
       method: 'GET',
       headers: {
