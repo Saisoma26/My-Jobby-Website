@@ -10,11 +10,14 @@ import JobItemDetails from './components/JobItemDetails'
 
 const App = () => (
   <Switch>
-    <Route exact path="/register" component={RegisterForm} />
-    <Route exact path="/login" component={LoginForm} />
-    <ProtectedRoute exact path="/" component={Home} />
-    <ProtectedRoute exact path="/jobs" component={Jobs} />
-    <ProtectedRoute path="/jobs/:id" component={JobItemDetails} />
+    <Route exact path="/My-Jobby-Website/register" component={RegisterForm} />
+    <Route exact path="/My-Jobby-Website/login" component={LoginForm} />
+    <ProtectedRoute exact path="/My-Jobby-Website/" component={Home} />
+    <ProtectedRoute exact path="/My-Jobby-Website/jobs" component={Jobs} />
+    <ProtectedRoute
+      path="/My-Jobby-Website/jobs/:id"
+      component={JobItemDetails}
+    />
     <NotFound />
   </Switch>
 )
