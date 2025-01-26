@@ -9,7 +9,7 @@ const ProjectHeader = props => {
     const {history} = props
     console.log('before removal:', Cookies.get('jwt_token'))
     Cookies.remove('jwt_token', {
-      path: '/My-Jobby-Website', // Matches the path used during setting
+      path: '/', // Matches the path used during setting
       secure: true, // Matches the secure flag used during setting
     })
     console.log('After removal:', Cookies.get('jwt_token'))
