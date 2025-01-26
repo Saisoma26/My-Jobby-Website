@@ -6,7 +6,7 @@ const ProtectedRoute = props => {
   console.log('protected route:', accessToken)
   if (accessToken === undefined) {
     console.log('going to login page')
-    return <Redirect to="/login" />
+    return <Redirect to="/My-Jobby-Website/login" />
   }
   return <Route {...props} />
 }

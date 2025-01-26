@@ -19,7 +19,7 @@ const JobItemCard = props => {
 
   return (
     <li className="job-item">
-      <Link to={`/jobs/${id}`}>
+      <Link to={`/My-Jobby-Website/jobs/${id}`}>
         <div className="cardbg-container">
           <div className="name-logo-container">
             <img className="applogo" alt="company logo" src={companyLogoUrl} />

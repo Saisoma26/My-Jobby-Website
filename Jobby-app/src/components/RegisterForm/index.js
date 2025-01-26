@@ -16,13 +16,13 @@ class RegisterForm extends Component {
   onRegistersuccess = jwtToken => {
     Cookies.set('jwt_token', jwtToken, {
       expires: 30,
-      path: '/',
+      path: '/My-Jobby-Website/',
       secure: false,
       sameSite: 'Strict',
     })
     console.log('set cookies')
     const {history} = this.props
-    history.replace('/')
+    history.replace('/My-Jobby-Website/')
   }
 
   onSubmitForm = async event => {
@@ -82,7 +82,7 @@ class RegisterForm extends Component {
     } = this.state
 
     if (isRegistered) {
-      return <Redirect to="/login" />
+      return <Redirect to="/My-Jobby-Website/login" />
     }
 
     return (
@@ -137,7 +137,8 @@ class RegisterForm extends Component {
               Register
             </button>
             <p>
-              Already registered ? <Link to="/login">Login</Link>
+              Already registered ?
+              <Link to="/My-Jobby-Website/login">Login</Link>
             </p>
           </form>
         </div>

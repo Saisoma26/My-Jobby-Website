@@ -10,13 +10,13 @@ class LoginForm extends Component {
   onLoginsuccess = jwtToken => {
     Cookies.set('jwt_token', jwtToken, {
       expires: 30,
-      path: '/',
+      path: '/My-Jobby-Website',
       secure: false,
       sameSite: 'Strict',
     })
     console.log('set cookies')
     const {history} = this.props
-    history.replace('/')
+    history.replace('/My-Jobby-Website')
   }
 
   onSubmitform = async event => {
@@ -56,7 +56,7 @@ class LoginForm extends Component {
 
     const accessToken = Cookies.get('jwt_token')
     if (accessToken !== undefined) {
-      return <Redirect to="/" />
+      return <Redirect to="/My-Jobby-Website/" />
     }
 
     return (
@@ -94,7 +94,8 @@ class LoginForm extends Component {
               Login
             </button>
             <p>
-              Do not have account ? <Link to="/register">Register</Link>
+              Do not have account ?
+              <Link to="/My-Jobby-Website/register">Register</Link>
             </p>
           </form>
           {errorMsg && <p className="errmsg">{errorMsg}</p>}

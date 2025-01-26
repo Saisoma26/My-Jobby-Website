@@ -5,7 +5,7 @@ import './index.css'
 const Home = props => {
   const onClickjobs = () => {
     const {history} = props
-    history.push('/jobs')
+    history.push('/My-Jobby-Website/jobs')
   }
 
   return (
@@ -19,7 +19,7 @@ const Home = props => {
             reviews.Find the job that fits your abilities and potential
           </p>
           <button className="findJobs-btn" type="button" onClick={onClickjobs}>
-            <Link to="/jobs">Find Jobs</Link>
+            <Link to="/My-Jobby-Website/jobs">Find Jobs</Link>
           </button>
         </div>
       </div>
