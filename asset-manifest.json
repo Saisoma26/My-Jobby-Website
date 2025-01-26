@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/My-Jobby-Website/static/css/main.4d40cab6.chunk.css",
+    "main.js": "/My-Jobby-Website/static/js/main.ed8731c6.chunk.js",
+    "main.js.map": "/My-Jobby-Website/static/js/main.ed8731c6.chunk.js.map",
+    "runtime-main.js": "/My-Jobby-Website/static/js/runtime-main.1e8ed4f5.js",
+    "runtime-main.js.map": "/My-Jobby-Website/static/js/runtime-main.1e8ed4f5.js.map",
+    "static/js/2.93c26ffc.chunk.js": "/My-Jobby-Website/static/js/2.93c26ffc.chunk.js",
+    "static/js/2.93c26ffc.chunk.js.map": "/My-Jobby-Website/static/js/2.93c26ffc.chunk.js.map",
+    "index.html": "/My-Jobby-Website/index.html",
+    "static/css/main.4d40cab6.chunk.css.map": "/My-Jobby-Website/static/css/main.4d40cab6.chunk.css.map",
+    "static/js/2.93c26ffc.chunk.js.LICENSE.txt": "/My-Jobby-Website/static/js/2.93c26ffc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e8ed4f5.js",
+    "static/js/2.93c26ffc.chunk.js",
+    "static/css/main.4d40cab6.chunk.css",
+    "static/js/main.ed8731c6.chunk.js"
+  ]
+}
