@@ -6,7 +6,7 @@
     "node": "^10.13 || 12 || 14 || 15",
     "npm": ">=6"
   },
-  "homepage": "https://saisoma26.github.io/My-Jobby-Website",
+  "homepage": "https://saisoma26.github.io/My-Jobby-Website/",
   "dependencies": {
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
