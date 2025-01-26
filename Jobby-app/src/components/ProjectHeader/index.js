@@ -7,8 +7,14 @@ import './index.css'
 const ProjectHeader = props => {
   const onClicklogout = () => {
     const {history} = props
-    Cookies.remove('jwt_token')
+    console.log('before removal:', Cookies.get('jwt_token'))
+    Cookies.remove('jwt_token', {
+      path: '/My-Jobby-Website/', // Matches the path used during setting
+      secure: false, // Matches the secure flag used during setting
+    })
+    console.log('After removal:', Cookies.get('jwt_token'))
     history.replace('/My-Jobby-Website/login')
+    // window.location.reload()
   }
 
   return (

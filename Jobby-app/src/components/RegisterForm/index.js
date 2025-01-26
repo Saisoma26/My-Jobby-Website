@@ -49,7 +49,7 @@ class RegisterForm extends Component {
 
     if (response.ok) {
       this.setState({isRegistered: true})
-      this.onRegistersuccess()
+      this.onRegistersuccess(data)
     } else {
       this.setState({errorMsg: data.message})
     }
