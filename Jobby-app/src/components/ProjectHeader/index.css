@@ -40,3 +40,27 @@
   text-align: center;
   padding: 4px;
 }
+
+@media screen and (max-width: 576px) {
+  .navbar{
+    height: 5%;
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+
+  .navbar-list{
+    width: 95%;
+  }
+
+  .nav-logo{
+    width: 100px;
+    height: 30px;
+  }
+  
+  .logout-btn {
+    width: 75px;
+    height: 28px;
+  }
+
+}

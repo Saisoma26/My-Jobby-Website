@@ -1,113 +1,195 @@
+/* Main container that holds the form */
 .register-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #272727;
+}
+
+/* Login container styles */
+.login-container {
+  width: 30%;
+  min-height: 40%;
+  align-self: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #272727;
+}
+
+/* Website logo */
+.website-logo {
+  align-self: center;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form heading */
+.form-heading {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Label styles */
+label {
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 6px;
+  text-align: start;
+}
+
+/* Input field styles */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Focus state for input fields */
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Error message styles */
+.error-message {
+  font-size: 12px;
+  color: #ff4d4f;
+  margin-bottom: 10px;
+}
+
+/* Submit button styles */
+.submit-btn {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f8f8f8;
+  background-color: #4f46e5;
+  font-size: 14px;
+  margin-top: 6px;
+  cursor: pointer;
+  width: 100%; /* Make the submit button take full width on smaller screens */
+}
+
+/* Hover effect for submit button */
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Focus state for submit button */
+.submit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Styles for different screen sizes */
+
+/* Mobile (small screens) */
+@media (max-width: 480px) {
+  .login-container {
+    width: 80%; /* Increase width for mobile devices */
+    padding: 15px;
   }
 
-  .login-container {
-    width: 30%;
-    min-height: 40%;
-    align-self: center;
+  .form-container {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: #272727;
+    max-width: 90%; /* Allow the form container to take more space on small screens */
   }
 
   .website-logo {
-    align-self: center;
-    width: 150px;
-    height: 40px;
-    margin-bottom: 10px;
-  }
-  
-  .form-container {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .form-heading {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  label {
-    font-size: 12px;
-    font-weight: 500;
-    color: black;
-    margin-bottom: 6px;
-    text-align: start;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    width: 120px; /* Smaller logo size for mobile */
+    height: auto;
   }
 
-  inputel {
-    /* height: 36px;
-    border: 1px solid #f8f8f8;
-    color: white;
-    font-weight: 500;
-    font-size: 12px;
-    margin-bottom: 10px;
-    margin: 0 auto;
-    background-color: transparent;
-    width: 100%; /* Adjust to the parent's width */
-    box-sizing: border-box; 
-    margin: 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 80%;
-    max-width: 100%;
-    align-self: center;
+  .form-heading {
+    font-size: 20px; /* Smaller heading for mobile */
   }
-  
-  .input-field:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
-  }
-  
-  .error-message {
-    font-size: 12px;
-    color: #ff4d4f;
-    margin-bottom: 10px;
+
+  .input-field {
+    font-size: 16px; /* Bigger input font size for mobile */
   }
 
   .submit-btn {
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #f8f8f8;
-    background-color: #4f46e5;
+    font-size: 16px; /* Bigger font for submit button on mobile */
+    height: 40px; /* Increase button height */
+  }
+}
+
+/* Tablet (medium screens) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-container {
+    width: 60%; /* Increase width for tablet devices */
+  }
+
+  .form-container {
+    max-width: 80%;
+  }
+
+  .website-logo {
+    width: 140px; /* Slightly smaller logo */
+  }
+
+  .form-heading {
+    font-size: 22px; /* Slightly smaller heading */
+  }
+
+  .input-field {
+    font-size: 15px; /* Adjust input font size */
+  }
+
+  .submit-btn {
+    font-size: 15px;
+    height: 35px; /* Slightly smaller button */
+  }
+}
+
+/* Desktop (large screens) */
+@media (min-width: 769px) {
+  .login-container {
+    width: 30%; /* Default width for larger screens */
+  }
+
+  .form-container {
+    max-width: 400px; /* Keep the max-width consistent for desktop */
+  }
+
+  .website-logo {
+    width: 150px; /* Default logo size */
+  }
+
+  .form-heading {
+    font-size: 24px; /* Default font size for headings */
+  }
+
+  .input-field {
+    font-size: 14px; /* Default input font size */
+  }
+
+  .submit-btn {
     font-size: 14px;
-    margin-top: 6px;
+    height: 32px; /* Default button size */
   }
-  
-  .submit-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .submit-btn:focus {
-    outline: none;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
-  }
-  
+}

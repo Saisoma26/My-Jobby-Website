@@ -74,3 +74,57 @@
   font-weight: 500;
   text-align: center;
 }
+
+/* Tablet view (768px and below) */
+@media screen and (max-width: 768px) {
+  .login-container {
+    min-width: 70%; /* Increase width for better fit on tablets */
+    padding: 16px;
+  }
+  .form-container{
+    min-width:80%;
+    margin : 0 auto;
+  }
+
+  .submit-btn {
+    width: 70%; /* Adjust button width */
+  }
+
+  .inputel {
+    width: 90%; /* Make input wider for tablets */
+  }
+}
+
+/* Mobile view (480px and below) */
+@media screen and (max-width: 480px) {
+  .login-container {
+    min-width: 80%; /* Increase width for small screens */
+    padding: 12px;
+  }
+
+  .form-container{
+    min-width:80%;
+  }
+
+  .website-logo {
+    width: 120px;
+    height: 30px; /* Scale logo down */
+  }
+
+  .submit-btn {
+    width: 80%; /* Adjust button width */
+    font-size: 12px; /* Reduce text size */
+  }
+
+  .inputel {
+    width: 100%; /* Full-width input for small screens */
+  }
+
+  .inputel-label {
+    font-size: 12px; /* Reduce label font size */
+  }
+
+  .errmsg {
+    font-size: 14px; /* Adjust error message font size */
+  }
+}
