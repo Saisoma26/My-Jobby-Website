@@ -6,7 +6,7 @@
     "node": "^10.13 || 12 || 14 || 15",
     "npm": ">=6"
   },
-  "homepage": "https://Saisoma26.github.io/Jobby-app",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",

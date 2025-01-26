@@ -102,14 +102,14 @@ class RegisterForm extends Component {
               value={username}
               required
               onChange={this.onChangeUsername}
-              className="input-field"
+              className="inputel"
             />
             <label htmlFor="description">Descripion</label>
             <textarea
               id="shortdescription"
               value={description}
               onChange={this.onChangeDescription}
-              className="input-field"
+              className="inputel"
               placeholder="Write a short description about yourself (max 50 characters)..."
               rows="4"
               cols="50"
@@ -121,7 +121,7 @@ class RegisterForm extends Component {
               value={password}
               required
               onChange={this.onChangePassword}
-              className="input-field"
+              className="inputel"
             />
             <label htmlFor="confirmPassword">Confirm Password</label>
             <input
@@ -130,7 +130,7 @@ class RegisterForm extends Component {
               value={confirmPassword}
               required
               onChange={this.onChangeConfirmPassword}
-              className="input-field"
+              className="inputel"
             />
             {errorMsg && <p className="error-message">*{errorMsg}</p>}
             <button type="submit" className="submit-btn">

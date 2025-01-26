@@ -39,7 +39,7 @@ class LoginForm extends Component {
       this.onLoginsuccess(data)
     } else {
       console.log(data.error_msg)
-      this.setState({errorMsg: data.error_msg})
+      this.setState({errorMsg: data.message})
     }
   }
 
@@ -97,7 +97,7 @@ class LoginForm extends Component {
               Do not have account ? <Link to="/register">Register</Link>
             </p>
           </form>
-          <p className="errmsg">{errorMsg}</p>
+          {errorMsg && <p className="errmsg">{errorMsg}</p>}
         </div>
       </div>
     )

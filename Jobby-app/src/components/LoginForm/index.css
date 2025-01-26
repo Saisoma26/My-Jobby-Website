@@ -1,8 +1,12 @@
 .back {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Prevent content overflow */
+  margin: 0; /* Remove default margin */
+  padding: 0; 
 }
 .login-container {
   width: 30%;
@@ -11,6 +15,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #272727;
 }
 .website-logo {
@@ -22,6 +27,7 @@
 .form-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .inputel-label {
   font-size: 14px;
@@ -30,13 +36,23 @@
   margin-bottom: 6px;
 }
 .inputel {
-  height: 36px;
+  /* height: 36px;
   border: 1px solid #f8f8f8;
   color: white;
   font-weight: 500;
   font-size: 12px;
   margin-bottom: 10px;
+  margin: 0 auto;
   background-color: transparent;
+  width: 100%; /* Adjust to the parent's width */
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 100%;
+  align-self: center;
 }
 .submit-btn {
   height: 32px;
@@ -47,10 +63,14 @@
   color: #f8f8f8;
   background-color: #4f46e5;
   font-size: 14px;
-  margin-top: 6px;
+  margin-top: 30px;
+  width: 50%;
+  align-self: center;
+  border-radius: 5px;
 }
 .errmsg {
   color: #ff0b37;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
+  text-align: center;
 }
