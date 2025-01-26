@@ -11,8 +11,8 @@ class LoginForm extends Component {
     Cookies.set('jwt_token', jwtToken, {
       expires: 30,
       path: '/My-Jobby-Website/',
-      secure: false,
-      sameSite: 'Strict',
+      secure: true,
+      sameSite: 'Lax',
     })
     console.log('set cookies')
     const {history} = this.props
