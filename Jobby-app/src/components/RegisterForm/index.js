@@ -17,6 +17,8 @@ class RegisterForm extends Component {
     Cookies.set('jwt_token', jwtToken, {
       expires: 30,
       path: '/',
+      secure: true, // Required for HTTPS
+      sameSite: 'Lax',
     })
     console.log('set cookies')
     const {history} = this.props
